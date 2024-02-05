@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+
+int firstDigit(int n){
+    while(n>=10){
+        n = n/10;
+    }
+    return n;
+}
+int main() {
+	int n;
+	cin>>n;
+	cout<<firstDigit(n);
+	return 0;
+}
+
+// 2345
+1st time:-
+2345/10 =234
+2nd time:-
+234/10 = 23
+3rd time :-
+23/10 = 2
